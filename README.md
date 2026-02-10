@@ -7,7 +7,8 @@ EventModel is a 1.2B parameter model finetune of LFM2-1.2B using data extracted 
 <img width="1953" height="258" alt="image" src="https://github.com/user-attachments/assets/0bb0b0c5-62fe-4043-9c23-cdf04df045b1" />
 
 ## Running Locally
-```from transformers import pipeline
+```
+from transformers import pipeline
 
 pipe = pipeline(
     "text-generation", 
