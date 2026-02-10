@@ -1,0 +1,62 @@
+Your job is to identify characters and child problem in a r/parenting post to observe data between person and the problem.
+
+Example 1:
+[POST]
+I have 4-year-old twins, and school mornings are… hard.
+
+Not because they refuse school — but because they’re just kids. They want to play, cuddle, lie around for a few extra minutes, tell me random stories while brushing their teeth. And honestly, I don’t blame them.
+
+I dislike the rush-rush mornings. The constant “come on, we’re getting late,” the pressure to be on time, the feeling that we’re already hurrying them through childhood before the day even begins.
+
+But at the same time, I know routines matter. Being late every day isn’t fair either. They get to miss their circle time.
+
+So I’m stuck between wanting to protect those slow, soft mornings — and wanting to teach them discipline and time.
+
+Parents of young kids: how do you balance this without turning mornings into a daily battle?
+
+[Character ANS]
+{“problem”:  "Very slow to routine in the morning, e.g wanting to play, cuddle, lie around, talk while brushing their teeth.."],
+“characters”:[
+    ["4 year old, twin"],
+  ]
+}
+
+[Explanation]
+The problem was summarized, and the character that the problem applies to is just the twin (not the parent).
+
+Example 2:
+[POST] Hi, I have an 8-year-old son who is extremely shy. At home with close family he’s very talkative and playful, but this seems to show up more in public or group settings.
+
+According to his teacher, he won’t raise his hand even when he knows the answer and only speaks when directly called on. His teacher assigned him a class that works with the school social worker. He also tends to sit alone on the bus while other kids chat in groups.
+
+We recently enrolled him in karate to help build confidence and social skills, but even there he’s too shy to group up with other kids to spar. He waits for the instructor to assign him a partner and kind of wanders around, overthinking asking other kids to spar with him.
+
+I’m feeling a bit lost and would really appreciate any advice or similar experiences with helping a very shy child come out of their shell.
+
+[ANS]
+{
+  "problem": "Extreme shyness in public or group settings despite being talkative at home. For example, refusal to participate voluntarily in class (won't raise hand) and only speaking when prompted or social isolation during transit (sitting alone on the bus). And also difficulty initiating social interactions with peers (overthinking and wandering instead of asking to spar).",
+  "characters": [
+    ["8-year-old", “boy”, “extremely shy”]
+  ]
+}
+
+[Character Explanation]
+The post primarily focuses on the kid’s issues. Here we only care about the kid (central focus of the problem), and not the teachers/karate and what not.
+
+
+Example 3:
+[POST] I have a genuine question with zero judgement/hate. I’m just super curious as a mom. I have never given my toddler a pacifier, and no judgement to any parents that do, they do seem to be super popular with babies, but why do kids that are 2, 3, or even 4 still have them? I thought it was bad for their teeth? Like I said I’m just genuinely curious, no judgement! I know baby experts say self soothing starts really young, so I wasn’t sure if it was a soothing device for toddler too. I can’t ask my parents because we also never had them as kids. My mom just said they were never necessary. I just wanted a safe space to ask other parents, and again, no hate or judgement. [\POST]
+{
+  "problem”:  "Not having a pacifier.",
+  "characters": [
+    ["toddlers"],
+  ]
+}
+
+[Character Explanation]
+Here, we omit majority of the post. The biggest problem regarding the child is the fact that they do not have a pacifier. We ignore the parents concern and focus on the child’s issue.
+
+First, identify the problem. Formalize each of the [characters] that a problem applies to. Finally, output a JSON with these. Do it on this post:
+
+[POST]
